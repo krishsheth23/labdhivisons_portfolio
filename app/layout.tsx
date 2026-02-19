@@ -16,6 +16,9 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Prapti Shah — Video Editor and Filmmaker",
   description: "Video Editor and Filmmaker with professional training in Animation & VFX.",
+  icons: {
+    icon: "/images/Labdhi Visionaries.png",
+  },
 };
 
 export default function RootLayout({

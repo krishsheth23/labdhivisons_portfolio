@@ -4,12 +4,12 @@ import { clsx } from 'clsx';
 const TICKER_ITEMS = [
     "Fashion & Editorial",
     "Brand & Commercial",
+"Mobile Cinematography",
     "Portrait & Studio",
-    "10+ Years Experience",
-    "100+ Brands Worldwide",
-    "7 Day Turnaround",
+    "2+ Years Experience",
+    "10+ Brands In India & UAE",
+    "Fastest Turnaround",
     "Professional Editing Included",
-    "Worldwide Travel",
     "RAW Files Delivered",
 ];
 

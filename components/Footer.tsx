@@ -3,7 +3,7 @@ import { Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 
 export default function Footer() {
     return (
-        <footer className="w-full border-t border-mercury/10 px-6 py-16 md:px-10 bg-white/50 backdrop-blur-sm text-mercury">
+        <footer className="w-full border-t border-mercury/10 px-6 py-16 md:px-10 bg-white text-mercury">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div className="md:col-span-1 space-y-4">
                     <h3 className="text-xl font-medium bg-gradient-to-r from-swirl to-laser bg-clip-text text-transparent">Labdhi Visionaries</h3>

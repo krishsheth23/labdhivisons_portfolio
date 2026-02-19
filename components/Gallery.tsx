@@ -6,18 +6,18 @@ import Image from "next/image";
 
 /* Using the URLs provided in the source HTML for now as placeholders */
 const IMAGES = [
-    "https://drive.google.com/thumbnail?id=1HLOnhU2dR29wa65O5GxaD_5SPMnIbs-M&sz=w800",
-    "https://drive.google.com/thumbnail?id=1LJMb649RrhPHl2_LGwcLL___iySqAtiD&sz=w800",
-    "https://drive.google.com/thumbnail?id=1Xvwq6EPVQrIdyaovNDms_msQn3ZVzgZQ&sz=w800",
-    "https://drive.google.com/thumbnail?id=1h0xItJ03qXMJY6AXs8I-X-5EraR36iKx&sz=w800",
-    "https://drive.google.com/thumbnail?id=1_ytneWQBdOIGa3cRnzvjsJpb-HGOLT7H&sz=w800",
-    "https://drive.google.com/thumbnail?id=1psonPQaiXfyivKNADRMjXig1mj_J9K7a&sz=w800",
-    "https://drive.google.com/thumbnail?id=1TL3vEt_KJviVWpnBmoIaIta_uGntHHUM&sz=w800",
-    "https://drive.google.com/thumbnail?id=1sN4ERfEMyOJKXPDA7jRy2y30HYTHOuGi&sz=w800",
-    "https://drive.google.com/thumbnail?id=1AbiyVZpKzrhY-818L8xRi8rQxHG-fJt9&sz=w800",
-    "https://drive.google.com/thumbnail?id=1kYhQIC4MlkPeWTHBKcShfFoftHeCaCBG&sz=w800",
-    "https://drive.google.com/thumbnail?id=1lZ-1qqusBZDBddji6BMQU6HxMXs7DrgW&sz=w800",
-    "https://drive.google.com/thumbnail?id=1mRg1k39UAoOSSaXdyYpTKfhHf8cvlTg_&sz=w800",
+    "https://drive.google.com/thumbnail?id=1Ie1p1IuvWZkfbO_D9Gnegpg5zKWDcMC7&sz=w800", // IMG_2299
+    "https://drive.google.com/thumbnail?id=1HLOnhU2dR29wa65O5GxaD_5SPMnIbs-M&sz=w800", // Graphics
+    "https://drive.google.com/thumbnail?id=1k224jzHQEfvZwGmslVlf0tDAIIiIA6yx&sz=w800", // IMG_2319
+    "https://drive.google.com/thumbnail?id=1Xvwq6EPVQrIdyaovNDms_msQn3ZVzgZQ&sz=w800", // IMG_2091
+    "https://drive.google.com/thumbnail?id=1LJMb649RrhPHl2_LGwcLL___iySqAtiD&sz=w800", // IMG_2107
+    "https://drive.google.com/thumbnail?id=1h0xItJ03qXMJY6AXs8I-X-5EraR36iKx&sz=w800", // IMG_2112
+    "https://drive.google.com/thumbnail?id=1psonPQaiXfyivKNADRMjXig1mj_J9K7a&sz=w800", // Product
+    "https://drive.google.com/thumbnail?id=14LAuWF8Gia8YlHYE48aykKNgf80uMyUs&sz=w800", // IMG_2131
+    "https://drive.google.com/thumbnail?id=1t6UE2WQ4qeP9wQVrHiz9lKzfG6EGO7JJ&sz=w800", // IMG_2141
+    "https://drive.google.com/thumbnail?id=1rnkHJXwclY7BwsGAFdfBBoNuK3tiJ18i&sz=w800", // IMG_2144
+    "https://drive.google.com/thumbnail?id=1_8GOiOCa3MNhyPQ9292SSDnfnEqrUtod&sz=w800", // IMG_2147
+    "https://drive.google.com/thumbnail?id=1GUG3dgHz07Fa5AkeOogH8nBzMfUjC-SJ&sz=w800", // IMG_2479
 ];
 
 export default function Gallery() {
