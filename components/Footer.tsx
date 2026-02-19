@@ -15,13 +15,10 @@ export default function Footer() {
                 <div className="flex flex-col gap-4">
                     <h4 className="text-xs uppercase tracking-widest text-mercury/50 font-semibold mb-2">Socials</h4>
                     <div className="flex gap-3">
-                        <Link href="#" className="p-2 border border-mercury/20 rounded-full hover:bg-gradient-to-r hover:from-swirl hover:to-laser hover:text-white hover:border-transparent transition-all">
+                        <Link href="https://www.instagram.com/labdhi_visionaries?igsh=MXF2NXUxY2ZhNTR6eg==" target="_blank" rel="noopener noreferrer" className="p-2 border border-mercury/20 rounded-full hover:bg-gradient-to-r hover:from-swirl hover:to-laser hover:text-white hover:border-transparent transition-all">
                             <Instagram size={16} />
                         </Link>
-                        <Link href="#" className="p-2 border border-mercury/20 rounded-full hover:bg-gradient-to-r hover:from-swirl hover:to-laser hover:text-white hover:border-transparent transition-all">
-                            <Twitter size={16} />
-                        </Link>
-                        <Link href="#" className="p-2 border border-mercury/20 rounded-full hover:bg-gradient-to-r hover:from-swirl hover:to-laser hover:text-white hover:border-transparent transition-all">
+                        <Link href="https://www.linkedin.com/in/prapti-shah-001965231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" className="p-2 border border-mercury/20 rounded-full hover:bg-gradient-to-r hover:from-swirl hover:to-laser hover:text-white hover:border-transparent transition-all">
                             <Linkedin size={16} />
                         </Link>
                     </div>

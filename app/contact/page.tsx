@@ -18,16 +18,15 @@ export default function ContactPage() {
                         </p>
                         <div className="space-y-2">
                             <div className="text-xs text-mercury/40 uppercase tracking-widest">Email</div>
-                            <a href="mailto:hello@augustrenner.com" className="text-2xl md:text-3xl text-mercury hover:text-mercury/60 transition-colors block">
-                                hello@augustrenner.com
+                            <a href="mailto:praptishah066@gmail.com" className="text-2xl md:text-3xl text-mercury hover:text-mercury/60 transition-colors block">
+                                praptishah066@gmail.com
                             </a>
                         </div>
                         <div className="space-y-2">
                             <div className="text-xs text-mercury/40 uppercase tracking-widest">Socials</div>
                             <div className="flex flex-col gap-1 text-mercury/60">
-                                <a href="#" className="hover:text-mercury w-fit">Instagram ↗</a>
-                                <a href="#" className="hover:text-mercury w-fit">Twitter ↗</a>
-                                <a href="#" className="hover:text-mercury w-fit">LinkedIn ↗</a>
+                                <a href="https://www.instagram.com/labdhi_visionaries?igsh=MXF2NXUxY2ZhNTR6eg==" target="_blank" rel="noopener noreferrer" className="hover:text-mercury w-fit">Instagram ↗</a>
+                                <a href="https://www.linkedin.com/in/prapti-shah-001965231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" className="hover:text-mercury w-fit">LinkedIn ↗</a>
                             </div>
                         </div>
                     </div>

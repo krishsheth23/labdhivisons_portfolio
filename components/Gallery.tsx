@@ -6,14 +6,18 @@ import Image from "next/image";
 
 /* Using the URLs provided in the source HTML for now as placeholders */
 const IMAGES = [
-    "https://framerusercontent.com/images/tTsOBaKGSqBuHYl1KNQKr8isbs.png",
-    "https://framerusercontent.com/images/0Va0F0TnXbfN2AupsEn7DJIl7pc.png",
-    "https://framerusercontent.com/images/tpoRRaplw45Qxbuhtf22IMQwi8.png",
-    "https://framerusercontent.com/images/zrBGK7oX2gwQPf5SQRSOfbkTjjY.png",
-    "https://framerusercontent.com/images/RbcBpcIiKSLozibWqFpP6ItUFWY.png",
-    "https://framerusercontent.com/images/08cMXLzsLsxSOYBugaBIuvQbM.png",
-    "https://framerusercontent.com/images/DA6gpmF5zC0WZ5S1zLWCKOCU.jpeg",
-    "https://framerusercontent.com/images/gJutA4fKgkN4S7Q93bbnfDZwDdo.jpeg",
+    "https://drive.google.com/thumbnail?id=1HLOnhU2dR29wa65O5GxaD_5SPMnIbs-M&sz=w800",
+    "https://drive.google.com/thumbnail?id=1LJMb649RrhPHl2_LGwcLL___iySqAtiD&sz=w800",
+    "https://drive.google.com/thumbnail?id=1Xvwq6EPVQrIdyaovNDms_msQn3ZVzgZQ&sz=w800",
+    "https://drive.google.com/thumbnail?id=1h0xItJ03qXMJY6AXs8I-X-5EraR36iKx&sz=w800",
+    "https://drive.google.com/thumbnail?id=1_ytneWQBdOIGa3cRnzvjsJpb-HGOLT7H&sz=w800",
+    "https://drive.google.com/thumbnail?id=1psonPQaiXfyivKNADRMjXig1mj_J9K7a&sz=w800",
+    "https://drive.google.com/thumbnail?id=1TL3vEt_KJviVWpnBmoIaIta_uGntHHUM&sz=w800",
+    "https://drive.google.com/thumbnail?id=1sN4ERfEMyOJKXPDA7jRy2y30HYTHOuGi&sz=w800",
+    "https://drive.google.com/thumbnail?id=1AbiyVZpKzrhY-818L8xRi8rQxHG-fJt9&sz=w800",
+    "https://drive.google.com/thumbnail?id=1kYhQIC4MlkPeWTHBKcShfFoftHeCaCBG&sz=w800",
+    "https://drive.google.com/thumbnail?id=1lZ-1qqusBZDBddji6BMQU6HxMXs7DrgW&sz=w800",
+    "https://drive.google.com/thumbnail?id=1mRg1k39UAoOSSaXdyYpTKfhHf8cvlTg_&sz=w800",
 ];
 
 export default function Gallery() {

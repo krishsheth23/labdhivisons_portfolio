@@ -14,8 +14,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "August Renner — Photographer",
-  description: "Fashion & editorial photographer crafting bold, refined imagery.",
+  title: "Prapti Shah — Video Editor and Filmmaker",
+  description: "Video Editor and Filmmaker with professional training in Animation & VFX.",
 };
 
 export default function RootLayout({
