@@ -1,25 +1,140 @@
 
 "use client";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const SERVICES = [
+type Service = {
+    title: string;
+    desc: string;
+    img: string;
+    fileId?: string; // Optional Google Drive File ID for video playback
+    link?: string;   // Optional external link
+};
+
+const SERVICES: Service[] = [
     {
         title: "Video Editing",
         desc: "Professional video editing for brands, events, and creative content with attention to storytelling and pacing.",
-        img: "https://framerusercontent.com/images/0TMtKkLuxYVc7yL0N3CbKZecNA.png",
+        img: "",
+        fileId: "1lZ-1qqusBZDBddji6BMQU6HxMXs7DrgW",
+        link: "https://drive.google.com/drive/folders/145Z_CPl-ooVK463diztcywaw7FsVzvzz?usp=sharing",
     },
     {
         title: "Mobile Cinematography",
         desc: "Cinematic mobile-shot content for social media, products, and brand storytelling.",
-        img: "https://framerusercontent.com/images/5nZ2kIKApLMGcMdvAk8P494g.png",
+        img: "",
+        fileId: "1mRg1k39UAoOSSaXdyYpTKfhHf8cvlTg_",
+        link: "https://drive.google.com/drive/folders/1OpqBrwdKqu_E83CWvdeN3vbeT41zJi3i",
     },
     {
-        title: "Graphic Design",
+        title: "Graphic Designing",
         desc: "Visual design for branding, social media, and marketing materials that align with your vision.",
-        img: "https://framerusercontent.com/images/Nuvt5svvtbqsnZOwwM1JuRZjG4.png",
+        img: "https://drive.google.com/thumbnail?id=1HLOnhU2dR29wa65O5GxaD_5SPMnIbs-M&sz=w800",
+        link: "https://drive.google.com/drive/folders/1DHZkCFI69ht0NednKkZJltk63RwjLP_z",
+    },
+    {
+        title: "Short Films",
+        desc: "Narrative-driven short films crafted with emotion, cinematic technique, and a strong visual identity.",
+        img: "",
+        fileId: "1kYhQIC4MlkPeWTHBKcShfFoftHeCaCBG",
+        link: "https://drive.google.com/drive/folders/1qhwwViEoBkUoCvD7NqfDJN3cXSGJS-b-",
+    },
+    {
+        title: "Wedding Videos",
+        desc: "Beautiful, timeless wedding highlights that capture every precious moment with cinematic elegance.",
+        img: "",
+        fileId: "1AbiyVZpKzrhY-818L8xRi8rQxHG-fJt9",
+        link: "https://drive.google.com/drive/folders/1AfizI7w0uoZNmrOzYs1IZ8YAFUlNF93z",
+    },
+    {
+        title: "Product Visuals",
+        desc: "High-quality product videos and visuals designed to showcase your brand and drive conversions.",
+        img: "",
+        fileId: "1psonPQaiXfyivKNADRMjXig1mj_J9K7a",
+        link: "https://drive.google.com/drive/folders/1Q2NZIZfsxYyQWRzBXHqaXqKlkVYXiAfi",
     },
 ];
+
+function InteractiveServiceCard({ service, index }: { service: Service; index: number }) {
+    const [playing, setPlaying] = useState(false);
+
+    // Using Google Drive thumbnail if fileId exists, otherwise use provided img
+    const thumbnailSrc = service.fileId
+        ? `https://drive.google.com/thumbnail?id=${service.fileId}&sz=w800`
+        : service.img;
+
+    const embedSrc = service.fileId
+        ? `https://drive.google.com/file/d/${service.fileId}/preview`
+        : "";
+
+    return (
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.1 }}
+            className={`group relative aspect-[3/4] overflow-hidden rounded-3xl border border-mercury/20 bg-mine-shaft/20 shadow-sm hover:shadow-xl transition-shadow ${service.fileId || service.link ? "cursor-pointer" : ""
+                }`}
+            onClick={() => {
+                if (service.fileId && !playing) {
+                    setPlaying(true);
+                } else if (!service.fileId && service.link) {
+                    window.open(service.link, "_blank");
+                }
+            }}
+        >
+            {playing && service.fileId ? (
+                <iframe
+                    src={embedSrc}
+                    allow="autoplay"
+                    className="w-full h-full relative z-20"
+                    style={{ border: "none" }}
+                    title={service.title}
+                />
+            ) : (
+                <>
+                    <Image
+                        src={thumbnailSrc}
+                        alt={service.title}
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-80"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-mercury/90 via-mercury/20 to-transparent p-6 flex flex-col justify-end z-10 pointer-events-none">
+                        <h3 className="text-lg font-medium text-white mb-2">{service.title}</h3>
+                        <p className="text-xs text-white/80 leading-relaxed">{service.desc}</p>
+                    </div>
+
+                    {/* Play Button Overlay for Video Services */}
+                    {service.fileId && (
+                        <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+                            <div className="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                    )}
+                </>
+            )}
+
+            {/* External Link Overlay (if no video playing) */}
+            {!playing && service.link && (
+                <a
+                    href={service.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center hover:bg-white/40 transition-colors"
+                    onClick={(e) => e.stopPropagation()}
+                >
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+                        <path d="M7 17L17 7M17 7H7M17 7v10" />
+                    </svg>
+                </a>
+            )}
+        </motion.div>
+    );
+}
 
 export default function Services() {
     return (
@@ -51,27 +166,9 @@ export default function Services() {
                     </motion.p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     {SERVICES.map((s, i) => (
-                        <motion.div
-                            key={i}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: i * 0.1 }}
-                            className="group relative aspect-[3/4] overflow-hidden rounded-3xl border border-mercury/20 bg-gradient-to-br from-purple-50 to-blue-50 cursor-pointer shadow-sm hover:shadow-xl transition-shadow"
-                        >
-                            <Image
-                                src={s.img}
-                                alt={s.title}
-                                fill
-                                className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-80"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-mercury/90 via-mercury/20 to-transparent p-6 flex flex-col justify-end">
-                                <h3 className="text-lg font-medium text-white mb-2">{s.title}</h3>
-                                <p className="text-xs text-white/80 leading-relaxed">{s.desc}</p>
-                            </div>
-                        </motion.div>
+                        <InteractiveServiceCard key={i} service={s} index={i} />
                     ))}
                 </div>
             </div>

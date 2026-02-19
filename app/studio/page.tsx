@@ -189,7 +189,7 @@ export default function StudioPage() {
                         </div>
                         <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
                             <Image
-                                src="https://framerusercontent.com/images/feP2ZZQx9vG9ajMRPfeb0N3UDk.jpg"
+                                src="/images/image.png"
                                 alt="Professional camera equipment"
                                 fill
                                 className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
