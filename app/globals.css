@@ -20,8 +20,7 @@
   }
 
   body {
-    background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 50%, #ecfeff 100%);
-    background-attachment: fixed;
+    background: #ffffff;
     color: var(--color-mercury);
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;

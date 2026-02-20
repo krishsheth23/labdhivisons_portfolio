@@ -31,20 +31,29 @@ export default function ContactPage() {
                         </div>
                     </div>
 
-                    <form className="space-y-6">
+                    <form action="https://formsubmit.co/praptishah066@gmail.com" method="POST" className="space-y-6">
+                        {/* Honeypot to prevent spam */}
+                        <input type="text" name="_honey" style={{ display: 'none' }} />
+
+                        {/* Explicitly enable reCAPTCHA (it's default, but this guarantees it) */}
+                        <input type="hidden" name="_captcha" value="true" />
+
+                        {/* Set email subject */}
+                        <input type="hidden" name="_subject" value="New Inquiry from Portfolio Website!" />
+
                         <div className="space-y-2">
                             <label className="text-xs uppercase tracking-widest text-mercury/40">Name</label>
-                            <input type="text" className="w-full bg-transparent border-b border-white/20 py-4 text-mercury focus:outline-none focus:border-mercury transition-colors" placeholder="Your name" />
+                            <input type="text" name="name" required className="w-full bg-transparent border-b border-white/20 py-4 text-mercury focus:outline-none focus:border-mercury transition-colors" placeholder="Your name" />
                         </div>
                         <div className="space-y-2">
                             <label className="text-xs uppercase tracking-widest text-mercury/40">Email</label>
-                            <input type="email" className="w-full bg-transparent border-b border-white/20 py-4 text-mercury focus:outline-none focus:border-mercury transition-colors" placeholder="your@email.com" />
+                            <input type="email" name="email" required className="w-full bg-transparent border-b border-white/20 py-4 text-mercury focus:outline-none focus:border-mercury transition-colors" placeholder="your@email.com" />
                         </div>
                         <div className="space-y-2">
                             <label className="text-xs uppercase tracking-widest text-mercury/40">Message</label>
-                            <textarea rows={4} className="w-full bg-transparent border-b border-white/20 py-4 text-mercury focus:outline-none focus:border-mercury transition-colors resize-none" placeholder="Tell me about your project..."></textarea>
+                            <textarea name="message" required rows={4} className="w-full bg-transparent border-b border-white/20 py-4 text-mercury focus:outline-none focus:border-mercury transition-colors resize-none" placeholder="Tell me about your project..."></textarea>
                         </div>
-                        <button className="group mt-8 flex items-center gap-3 text-sm font-medium text-cod-gray bg-mercury px-8 py-4 rounded-full hover:bg-white transition-colors">
+                        <button type="submit" className="group mt-8 flex items-center gap-3 text-sm font-medium text-cod-gray bg-mercury px-8 py-4 rounded-full hover:bg-white transition-colors">
                             Send Message
                             <MoveRight size={16} className="group-hover:translate-x-1 transition-transform" />
                         </button>

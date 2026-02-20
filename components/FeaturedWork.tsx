@@ -7,21 +7,21 @@ import Link from "next/link";
 
 const PROJECTS = [
     {
-        title: "Product Animation",
+        title: "Photography",
         date: "2025",
-        cat: "Motion & Animation",
+        cat: "Cinematic & Still",
+        img: "https://drive.google.com/thumbnail?id=1LJMb649RrhPHl2_LGwcLL___iySqAtiD&sz=w800",
+        link: "https://drive.google.com/drive/folders/1OpqBrwdKqu_E83CWvdeN3vbeT41zJi3i",
+    },
+    {
+        title: "Product Visuals",
+        date: "2025",
+        cat: "3D & Motion",
         img: "https://drive.google.com/thumbnail?id=1psonPQaiXfyivKNADRMjXig1mj_J9K7a&sz=w800",
         link: "https://drive.google.com/drive/folders/1Q2NZIZfsxYyQWRzBXHqaXqKlkVYXiAfi",
     },
     {
-        title: "VFX / Compositing",
-        date: "2025",
-        cat: "Nuke",
-        img: "https://drive.google.com/thumbnail?id=1sN4ERfEMyOJKXPDA7jRy2y30HYTHOuGi&sz=w800",
-        link: "https://drive.google.com/drive/folders/18Mt8hXOGSH_4-3ye0c30-DdeBecpamUW",
-    },
-    {
-        title: "YouTube Video Edits",
+        title: "YouTube Edits",
         date: "2025",
         cat: "Social Media",
         img: "https://drive.google.com/thumbnail?id=1TL3vEt_KJviVWpnBmoIaIta_uGntHHUM&sz=w800",
@@ -48,61 +48,61 @@ export default function FeaturedWork() {
                 </a>
             </div>
 
-            {/* Featured Projects Grid */}
-            <div className="max-w-7xl mx-auto mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-                <a href="https://drive.google.com/drive/folders/1DHZkCFI69ht0NednKkZJltk63RwjLP_z" target="_blank" rel="noopener noreferrer" className="group relative rounded-2xl overflow-hidden bg-mine-shaft border border-white/10 hover:border-white/20 transition-colors">
-                    <div className="aspect-[4/3] overflow-hidden">
+            {/* Premium Editorial Grid Layout */}
+            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+                {/* Main Featured Item (Photography) */}
+                <a href={PROJECTS[0].link} target="_blank" rel="noopener noreferrer" className="group relative rounded-3xl overflow-hidden bg-mine-shaft border border-white/10 hover:border-white/20 transition-colors lg:col-span-8 flex flex-col h-full min-h-[400px] lg:min-h-[600px]">
+                    <div className="relative flex-1 overflow-hidden">
                         <Image
-                            src="https://drive.google.com/thumbnail?id=1HLOnhU2dR29wa65O5GxaD_5SPMnIbs-M&sz=w800"
-                            alt="Graphics Portfolio"
-                            width={800}
-                            height={600}
-                            className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+                            src={PROJECTS[0].img}
+                            alt={PROJECTS[0].title}
+                            fill
+                            className="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105"
+                            quality={90}
+                            priority
                         />
-                    </div>
-                    <div className="p-5">
-                        <div className="text-[10px] text-mercury/40 uppercase tracking-widest mb-1">2025</div>
-                        <div className="text-lg font-medium text-mercury">Graphics</div>
-                        <div className="mt-3 inline-block px-2 py-1 text-[10px] uppercase tracking-wider text-mercury/40 border border-white/10 rounded-full">Graphic Design</div>
-                    </div>
-                </a>
-                <a href="https://drive.google.com/drive/folders/1OpqBrwdKqu_E83CWvdeN3vbeT41zJi3i" target="_blank" rel="noopener noreferrer" className="group relative rounded-2xl overflow-hidden bg-mine-shaft border border-white/10 hover:border-white/20 transition-colors">
-                    <div className="aspect-[4/3] overflow-hidden">
-                        <Image
-                            src="https://drive.google.com/thumbnail?id=1LJMb649RrhPHl2_LGwcLL___iySqAtiD&sz=w800"
-                            alt="Photography Portfolio"
-                            width={800}
-                            height={600}
-                            className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
-                        />
-                    </div>
-                    <div className="p-5">
-                        <div className="text-[10px] text-mercury/40 uppercase tracking-widest mb-1">2025</div>
-                        <div className="text-lg font-medium text-mercury">Photography</div>
-                        <div className="mt-3 inline-block px-2 py-1 text-[10px] uppercase tracking-wider text-mercury/40 border border-white/10 rounded-full">Photography</div>
-                    </div>
-                </a>
-            </div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-mercury/90 via-transparent to-transparent opacity-60"></div>
 
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-                {PROJECTS.map((p, i) => (
-                    <a key={i} href={p.link} target="_blank" rel="noopener noreferrer" className="group relative rounded-2xl overflow-hidden bg-mine-shaft border border-white/10 hover:border-white/20 transition-colors">
-                        <div className="aspect-[4/3] overflow-hidden">
-                            <Image
-                                src={p.img}
-                                alt={p.title}
-                                width={600}
-                                height={400}
-                                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
-                            />
+                        <div className="absolute bottom-0 left-0 p-8 md:p-10 w-full flex justify-between items-end">
+                            <div>
+                                <div className="text-xs text-white/70 uppercase tracking-widest mb-3 flex items-center gap-2">
+                                    <span className="w-6 h-px bg-white/50"></span>
+                                    {PROJECTS[0].date}
+                                </div>
+                                <h3 className="text-3xl md:text-4xl font-medium text-white font-serif">{PROJECTS[0].title}</h3>
+                            </div>
+                            <span className="bg-white/10 backdrop-blur-md px-5 py-2.5 rounded-full text-xs uppercase tracking-widest text-white border border-white/20 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 hidden sm:block">
+                                View Project ↗
+                            </span>
                         </div>
-                        <div className="p-5">
-                            <div className="text-[10px] text-mercury/40 uppercase tracking-widest mb-1">{p.date}</div>
-                            <div className="text-lg font-medium text-mercury">{p.title}</div>
-                            <div className="mt-3 inline-block px-2 py-1 text-[10px] uppercase tracking-wider text-mercury/40 border border-white/10 rounded-full">{p.cat}</div>
-                        </div>
-                    </a>
-                ))}
+                    </div>
+                </a>
+
+                {/* Secondary Stacked Items */}
+                <div className="lg:col-span-4 flex flex-col gap-8">
+                    {PROJECTS.slice(1).map((p, i) => (
+                        <a key={i} href={p.link} target="_blank" rel="noopener noreferrer" className="group relative rounded-3xl overflow-hidden bg-mine-shaft border border-white/10 hover:border-white/20 transition-colors flex-1 min-h-[300px] flex flex-col">
+                            <div className="relative flex-1 overflow-hidden">
+                                <Image
+                                    src={p.img}
+                                    alt={p.title}
+                                    fill
+                                    className="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-mercury/90 via-transparent to-transparent opacity-60"></div>
+
+                                <div className="absolute bottom-0 left-0 p-6 w-full">
+                                    <div className="text-[10px] text-white/70 uppercase tracking-widest mb-2 flex items-center gap-2">
+                                        <span className="w-4 h-px bg-white/50"></span>
+                                        {p.date}
+                                    </div>
+                                    <h3 className="text-xl md:text-2xl font-medium text-white font-serif mb-1">{p.title}</h3>
+                                    <div className="text-xs text-mercury/40">{p.cat}</div>
+                                </div>
+                            </div>
+                        </a>
+                    ))}
+                </div>
             </div>
         </section>
     );

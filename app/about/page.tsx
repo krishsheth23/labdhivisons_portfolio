@@ -28,10 +28,10 @@ export default function AboutPage() {
 
                     <div className="space-y-6 text-mercury/60 text-lg leading-relaxed">
                         <p>
-                            Video Editor and Filmmaker with professional training in Animation & VFX and hands-on experience through freelance projects and client work. Founder of Labdhi Visionaries, providing video editing, graphic designing, and mobile cinematography services for brands and individuals.
+                            Video Editor and Filmmaker with professional training and hands-on experience through freelance projects and client work. Founder of Labdhi Visionaries, providing video editing, photography, and mobile cinematography services for brands and individuals.
                         </p>
                         <p>
-                            Worked with a Dubai-based expo for video editing and designing projects. Experienced in short films, wedding videos, product visuals, and brand content, with a strong interest in learning and growing in professional camera cinematography.
+                            Worked with a Dubai-based expo for video editing projects. Experienced in short films, wedding videos, product visuals, and brand content, with a strong interest in learning and growing in professional camera cinematography.
                         </p>
                     </div>
 
@@ -62,7 +62,7 @@ export default function AboutPage() {
                             What I Offer
                         </h2>
                         <p className="text-lg text-mercury/60 leading-relaxed">
-                            Video editing, mobile cinematography, graphic designing, short films, wedding videos, and product visuals— focused on storytelling, clarity, and emotional impact.
+                            Video editing, mobile cinematography, photography, short films, wedding videos, and product visuals— focused on storytelling, clarity, and emotional impact.
                         </p>
                         <p className="text-lg text-mercury/60 leading-relaxed">
                             Always learning, always evolving, especially in camera cinematography. Each project is an opportunity to create something meaningful and visually compelling.
@@ -70,7 +70,7 @@ export default function AboutPage() {
                     </div>
                     <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                         <Image
-                            src="/images/work-process.jpg"
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
                             alt="Creative workspace"
                             fill
                             className="object-cover hover:scale-105 transition-transform duration-700"

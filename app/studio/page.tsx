@@ -67,13 +67,13 @@ export default function StudioPage() {
                         className="space-y-6 text-mercury/60 leading-relaxed"
                     >
                         <p>
-                            Video Editor and Filmmaker with professional training in Animation & VFX and hands-on experience through freelance projects and client work. Founder of Labdhi Visionaries, providing video editing, graphic designing, and mobile cinematography services for brands and individuals.
+                            Video Editor and Filmmaker with professional training and hands-on experience through freelance projects and client work. Founder of Labdhi Visionaries, providing video editing, photography, and mobile cinematography services for brands and individuals.
                         </p>
                         <p>
-                            Worked with a Dubai-based expo for video editing and designing projects. Experienced in short films, wedding videos, product visuals, and brand content, with a strong interest in learning and growing in professional camera cinematography.
+                            Worked with a Dubai-based expo for video editing projects. Experienced in short films, wedding videos, product visuals, and brand content, with a strong interest in learning and growing in professional camera cinematography.
                         </p>
                         <p>
-                            From concept to final cut, I create videos that connect. My work includes video editing, mobile-shot cinematic content, short films, wedding highlights, product videos, and graphic design—crafted to match your brand's voice and vision.
+                            From concept to final cut, I create videos that connect. My work includes video editing, mobile-shot cinematic content, short films, wedding highlights, and product videos—crafted to match your brand's voice and vision.
                         </p>
                     </motion.div>
                 </div>
@@ -179,7 +179,7 @@ export default function StudioPage() {
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <span className="w-1.5 h-1.5 bg-laser rounded-full mt-2 shrink-0"></span>
-                                    <span>Adobe Photoshop & Illustrator for Graphic Design</span>
+                                    <span>Adobe Lightroom & Photoshop for Photo Editing</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <span className="w-1.5 h-1.5 bg-laser rounded-full mt-2 shrink-0"></span>

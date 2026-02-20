@@ -28,10 +28,10 @@ const SERVICES: Service[] = [
         link: "https://drive.google.com/drive/folders/1OpqBrwdKqu_E83CWvdeN3vbeT41zJi3i",
     },
     {
-        title: "Graphic Designing",
-        desc: "Visual design for branding, social media, and marketing materials that align with your vision.",
-        img: "https://drive.google.com/thumbnail?id=1HLOnhU2dR29wa65O5GxaD_5SPMnIbs-M&sz=w800",
-        link: "https://drive.google.com/drive/folders/1DHZkCFI69ht0NednKkZJltk63RwjLP_z",
+        title: "Photography",
+        desc: "High-end photography for events, products, and cinematic visual storytelling.",
+        img: "https://drive.google.com/thumbnail?id=1LJMb649RrhPHl2_LGwcLL___iySqAtiD&sz=w800",
+        link: "https://drive.google.com/drive/folders/1OpqBrwdKqu_E83CWvdeN3vbeT41zJi3i",
     },
     {
         title: "Short Films",
@@ -138,7 +138,7 @@ function InteractiveServiceCard({ service, index }: { service: Service; index: n
 
 export default function Services() {
     return (
-        <section className="py-24 md:py-32 px-6 md:px-10 border-t border-mercury/10 bg-white/50">
+        <section className="py-24 md:py-32 px-6 md:px-10 bg-white">
             <div className="max-w-7xl mx-auto space-y-16">
                 <div className="flex flex-col md:flex-row justify-between items-start gap-8">
                     <motion.div

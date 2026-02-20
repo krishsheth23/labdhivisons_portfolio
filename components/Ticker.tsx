@@ -4,7 +4,7 @@ import { clsx } from 'clsx';
 const TICKER_ITEMS = [
     "Fashion & Editorial",
     "Brand & Commercial",
-"Mobile Cinematography",
+    "Mobile Cinematography",
     "Portrait & Studio",
     "2+ Years Experience",
     "10+ Brands In India & UAE",
