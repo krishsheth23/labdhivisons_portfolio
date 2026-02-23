@@ -70,7 +70,7 @@ export default function StudioPage() {
                             Video Editor and Filmmaker with professional training and hands-on experience through freelance projects and client work. Founder of Labdhi Visionaries, providing video editing, photography, and mobile cinematography services for brands and individuals.
                         </p>
                         <p>
-                            Worked with a Dubai-based expo for video editing projects. Experienced in short films, wedding videos, product visuals, and brand content, with a strong interest in learning and growing in professional camera cinematography.
+                            Worked with a Dubai-based expo for video editing projects. Experienced in short films, wedding videos, UAE production, and brand content, with a strong interest in learning and growing in professional camera cinematography.
                         </p>
                         <p>
                             From concept to final cut, I create videos that connect. My work includes video editing, mobile-shot cinematic content, short films, wedding highlights, and product videos—crafted to match your brand's voice and vision.

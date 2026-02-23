@@ -58,8 +58,9 @@ export default function Hero() {
                         transition={{ delay: 0.8 }}
                         className="text-sm md:text-base text-white max-w-sm leading-relaxed "
                     >
-                        From concept to final cut, I create videos that connect. My work includes video editing, mobile-shot cinematic content, short films, wedding highlights, product videos, and graphic design—crafted to match your brand's voice and vision.
-                    </motion.p>
+                            From concept to final cut, we create videos that connect.
+
+                        We are into Video Editing (Short-Form & Long-Form), Mobile Videography, Cinematic Shoots, Product Shoots, Wedding Content Creation, AI-Generated Videos, Fast-Paced Cut Videos, and Graphic Designing — specially crafted to match your brand’s voice, vision, and audience.                    </motion.p>
                 </div>
             </div>
         </section>

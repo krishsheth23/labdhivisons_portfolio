@@ -11,21 +11,21 @@ const PROJECTS = [
         date: "2025",
         cat: "Cinematic & Still",
         img: "https://drive.google.com/thumbnail?id=1LJMb649RrhPHl2_LGwcLL___iySqAtiD&sz=w800",
-        link: "https://drive.google.com/drive/folders/1OpqBrwdKqu_E83CWvdeN3vbeT41zJi3i",
+        link: "https://drive.google.com/drive/folders/1DHZkCFI69ht0NednKkZJltk63RwjLP_z?usp=drive_link",
     },
     {
-        title: "Product Visuals",
+        title: "UAE Production",
         date: "2025",
         cat: "3D & Motion",
-        img: "https://drive.google.com/thumbnail?id=1psonPQaiXfyivKNADRMjXig1mj_J9K7a&sz=w800",
-        link: "https://drive.google.com/drive/folders/1Q2NZIZfsxYyQWRzBXHqaXqKlkVYXiAfi",
+        img: "/images/uae.jpeg",
+        link: "https://drive.google.com/drive/folders/1DHZkCFI69ht0NednKkZJltk63RwjLP_z?usp=drive_link",
     },
     {
-        title: "YouTube Edits",
+        title: "Video Production",
         date: "2025",
         cat: "Social Media",
-        img: "https://drive.google.com/thumbnail?id=1TL3vEt_KJviVWpnBmoIaIta_uGntHHUM&sz=w800",
-        link: "https://drive.google.com/drive/folders/1qhwwViEoBkUoCvD7NqfDJN3cXSGJS-b-",
+        img: "/images/vIDEO.jpeg",
+        link: "https://drive.google.com/drive/folders/1OpqBrwdKqu_E83CWvdeN3vbeT41zJi3i?usp=drive_link",
     },
 ];
 
@@ -42,7 +42,7 @@ export default function FeaturedWork() {
                         A look through <br /> <em className="text-mercury/40 font-serif italic">my lens</em>
                     </h2>
                 </div>
-                <a href="https://drive.google.com/drive/folders/1nlG29QJAzCFaXWb5qNj6M6eJ7kYUSa-Y?usp=sharing" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 text-sm font-medium text-mercury border border-white/10 px-5 py-2.5 rounded-full hover:bg-white/5 transition-colors">
+                <a href="https://drive.google.com/drive/folders/1DHZkCFI69ht0NednKkZJltk63RwjLP_z?usp=drive_link" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 text-sm font-medium text-mercury border border-white/10 px-5 py-2.5 rounded-full hover:bg-white/5 transition-colors">
                     View full portfolio
                     <MoveRight size={14} className="group-hover:translate-x-1 transition-transform" />
                 </a>
