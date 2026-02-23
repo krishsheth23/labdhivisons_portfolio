@@ -17,14 +17,14 @@ export default function Navbar() {
     }, []);
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-40 px-6 md:px-10 h-24 flex items-center justify-between">
+        <header className="fixed top-0 left-0 right-0 z-40 px-6 md:px-10 h-32 flex items-center justify-between">
             <Link href="/" className="flex items-center pointer-events-auto group">
                 <Image
                     src="/images/Labdhi Visionaries.png"
                     alt="Labdhi Visionaries"
                     width={300}
                     height={100}
-                    className={`h-20 w-auto object-contain group-hover:opacity-70 transition-all duration-300 ${scrolled ? '' : 'invert'}`}
+                    className={`h-32 w-auto object-contain group-hover:opacity-70 transition-all duration-300 ${scrolled ? '' : 'invert'}`}
                     priority
                 />
             </Link>
