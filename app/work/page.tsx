@@ -24,7 +24,7 @@ const PROJECTS = [
         img: "/images/vIDEO.jpeg",
         title: "Video Production",
         cat: "Social Media",
-        link: "https://drive.google.com/drive/folders/1OpqBrwdKqu_E83CWvdeN3vbeT41zJi3i?usp=drive_link",
+        link: "https://drive.google.com/drive/folders/145Z_CPl-ooVK463diztcywaw7FsVzvzz?usp=drive_link",
         span: "md:col-span-1",
         aspect: "aspect-[4/5]",
     },
