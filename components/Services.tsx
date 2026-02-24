@@ -18,20 +18,20 @@ const SERVICES: Service[] = [
         desc: "Professional video editing for brands, events, and creative content with attention to storytelling and pacing.",
         img: "",
         fileId: "1lZ-1qqusBZDBddji6BMQU6HxMXs7DrgW",
-        link: "https://drive.google.com/file/d/1lZ-1qqusBZDBddji6BMQU6HxMXs7DrgW/view?usp=drive_link",
+        link: "https://drive.google.com/drive/folders/145Z_CPl-ooVK463diztcywaw7FsVzvzz?usp=drive_link",
     },
     {
         title: "Mobile Cinematography",
         desc: "Cinematic mobile-shot content for social media, products, and brand storytelling.",
         img: "",
         fileId: "1hdy0ooBmsnC-CbRn99qR-3zUWX6woEVX",
-        link: "https://drive.google.com/file/d/1hdy0ooBmsnC-CbRn99qR-3zUWX6woEVX/view?usp=drive_link",
+        link: "https://drive.google.com/drive/folders/16YVpPbB1r7_ELdQLrBdd89o24EOeH03h?usp=drive_link",
     },
     {
         title: "Photography",
         desc: "High-end photography for events, products, and cinematic visual storytelling.",
         img: "https://drive.google.com/thumbnail?id=1LJMb649RrhPHl2_LGwcLL___iySqAtiD&sz=w800",
-        link: "https://drive.google.com/file/d/1LJMb649RrhPHl2_LGwcLL___iySqAtiD/view?usp=drive_link",
+        link: "https://drive.google.com/drive/folders/1AcWnkGN2mMrkEZnDh2QUpfaEh4EZRaGP?usp=drive_link",
     },
     {
         title: "Fast Paced Cuts",
@@ -44,13 +44,13 @@ const SERVICES: Service[] = [
         desc: "Beautiful, timeless wedding highlights that capture every precious moment with cinematic elegance.",
         img: "",
         fileId: "1AbiyVZpKzrhY-818L8xRi8rQxHG-fJt9",
-        link: "https://drive.google.com/file/d/1AbiyVZpKzrhY-818L8xRi8rQxHG-fJt9/view?usp=drive_link",
+        link: "https://drive.google.com/drive/folders/1AfizI7w0uoZNmrOzYs1IZ8YAFUlNF93z?usp=drive_link",
     },
     {
         title: "UAE Production",
         desc: "High-quality product videos and visuals designed to showcase your brand and drive conversions.",
         img: "https://drive.google.com/thumbnail?id=1ILczWafX8OPscpBckWHJKLkMIupFPNd4&sz=w800",
-        link: "https://drive.google.com/file/d/1ILczWafX8OPscpBckWHJKLkMIupFPNd4/view?usp=drive_link",
+        link: "https://drive.google.com/drive/folders/1DHZkCFI69ht0NednKkZJltk63RwjLP_z?usp=drive_link",
     },
 ];
 

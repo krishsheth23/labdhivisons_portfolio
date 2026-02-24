@@ -11,14 +11,14 @@ const PROJECTS = [
         date: "2025",
         cat: "Cinematic & Still",
         img: "https://drive.google.com/thumbnail?id=1LJMb649RrhPHl2_LGwcLL___iySqAtiD&sz=w800",
-        link: "https://drive.google.com/file/d/1LJMb649RrhPHl2_LGwcLL___iySqAtiD/view?usp=drive_link",
+        link: "https://drive.google.com/drive/folders/1AcWnkGN2mMrkEZnDh2QUpfaEh4EZRaGP?usp=drive_link",
     },
     {
         title: "UAE Production",
         date: "2025",
         cat: "3D & Motion",
         img: "/images/uae.jpeg",
-        link: "https://drive.google.com/file/d/1ILczWafX8OPscpBckWHJKLkMIupFPNd4/view?usp=drive_link",
+        link: "https://drive.google.com/drive/folders/1DHZkCFI69ht0NednKkZJltk63RwjLP_z?usp=drive_link",
     },
     {
         title: "Video Production",
@@ -42,7 +42,7 @@ export default function FeaturedWork() {
                         A look through <br /> <em className="text-mercury/40 font-serif italic">my lens</em>
                     </h2>
                 </div>
-                <a href="https://drive.google.com/drive/folders/1DHZkCFI69ht0NednKkZJltk63RwjLP_z?usp=drive_link" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 text-sm font-medium text-mercury border border-white/10 px-5 py-2.5 rounded-full hover:bg-white/5 transition-colors">
+                <a href="https://drive.google.com/drive/folders/1nlG29QJAzCFaXWb5qNj6M6eJ7kYUSa-Y?usp=drive_link" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 text-sm font-medium text-mercury border border-white/10 px-5 py-2.5 rounded-full hover:bg-white/5 transition-colors">
                     View full portfolio
                     <MoveRight size={14} className="group-hover:translate-x-1 transition-transform" />
                 </a>
