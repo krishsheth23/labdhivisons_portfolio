@@ -11,14 +11,14 @@ const PROJECTS = [
         date: "2025",
         cat: "Cinematic & Still",
         img: "https://drive.google.com/thumbnail?id=1LJMb649RrhPHl2_LGwcLL___iySqAtiD&sz=w800",
-        link: "https://drive.google.com/drive/folders/1DHZkCFI69ht0NednKkZJltk63RwjLP_z?usp=drive_link",
+        link: "https://drive.google.com/file/d/1LJMb649RrhPHl2_LGwcLL___iySqAtiD/view?usp=drive_link",
     },
     {
         title: "UAE Production",
         date: "2025",
         cat: "3D & Motion",
         img: "/images/uae.jpeg",
-        link: "https://drive.google.com/drive/folders/1DHZkCFI69ht0NednKkZJltk63RwjLP_z?usp=drive_link",
+        link: "https://drive.google.com/file/d/1ILczWafX8OPscpBckWHJKLkMIupFPNd4/view?usp=drive_link",
     },
     {
         title: "Video Production",

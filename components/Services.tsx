@@ -18,7 +18,7 @@ const SERVICES: Service[] = [
         desc: "Professional video editing for brands, events, and creative content with attention to storytelling and pacing.",
         img: "",
         fileId: "1lZ-1qqusBZDBddji6BMQU6HxMXs7DrgW",
-        link: "https://drive.google.com/drive/folders/1DHZkCFI69ht0NednKkZJltk63RwjLP_z?usp=drive_link",
+        link: "https://drive.google.com/file/d/1lZ-1qqusBZDBddji6BMQU6HxMXs7DrgW/view?usp=drive_link",
     },
     {
         title: "Mobile Cinematography",
@@ -31,7 +31,7 @@ const SERVICES: Service[] = [
         title: "Photography",
         desc: "High-end photography for events, products, and cinematic visual storytelling.",
         img: "https://drive.google.com/thumbnail?id=1LJMb649RrhPHl2_LGwcLL___iySqAtiD&sz=w800",
-        link: "https://drive.google.com/drive/folders/1DHZkCFI69ht0NednKkZJltk63RwjLP_z?usp=drive_link",
+        link: "https://drive.google.com/file/d/1LJMb649RrhPHl2_LGwcLL___iySqAtiD/view?usp=drive_link",
     },
     {
         title: "Fast Paced Cuts",
@@ -44,7 +44,7 @@ const SERVICES: Service[] = [
         desc: "Beautiful, timeless wedding highlights that capture every precious moment with cinematic elegance.",
         img: "",
         fileId: "1AbiyVZpKzrhY-818L8xRi8rQxHG-fJt9",
-        link: "https://drive.google.com/drive/folders/1DHZkCFI69ht0NednKkZJltk63RwjLP_z?usp=drive_link",
+        link: "https://drive.google.com/file/d/1AbiyVZpKzrhY-818L8xRi8rQxHG-fJt9/view?usp=drive_link",
     },
     {
         title: "UAE Production",
